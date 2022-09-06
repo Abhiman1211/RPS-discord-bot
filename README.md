@@ -60,7 +60,10 @@ async def rps(ctx, message):
             if answer == "paper":
                 await ctx.reply(f"You loose! I chose {computers_answer} and you chose {answer}!")
 
-bot.run('OTMwMzU2NDk4NjAzODQ3NzMw.Yd0sAg.hD8J5UTjQ58XoPB36YW83Z-LnV8')
+bot.run('OTMwMzU2NDk4NjAzODQ3NzMw.Yd0sAg.hD8J5UTjQ58XoPB36YW83Z-LnV8')\
+# RPS bot <br>
+![image](https://user-images.githubusercontent.com/96763019/188546779-66583fce-a325-4420-bd53-05c4c74c1ed8.png)
+<br>
 
 <br>
 
