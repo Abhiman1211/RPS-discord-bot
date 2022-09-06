@@ -1,5 +1,4 @@
 # RPS-discord-bot
-# RPS-discord-bot
 ## Purpose
 <br>
 This is an interactive bot that plays rock, paper and scissors and actively communicates. Our purpose was to explore different modules of python and also make learning them intresting by constructing this fun game.
@@ -14,54 +13,54 @@ This is an interactive bot that plays rock, paper and scissors and actively comm
 
 ## Documentation
 
-import discord
-import random
-from discord.ext import commands
+import discord<br>
+import random<br>
+from discord.ext import commands<br>
 
-bot = commands.Bot(command_prefix=".")
-
-
-@bot.event
-async def on_ready():
-    print("Let's get started!")
+bot = commands.Bot(command_prefix=".")<br>
 
 
-@bot.command()
-async def hello(ctx):
-    await ctx.reply('Hello!')
+@bot.event<br>
+async def on_ready():<br>
+    print("Let's get started!")<br>
 
 
-@bot.command()
-async def rps(ctx, message):
-    answer = message.lower()
-    choice = ["rock", "paper", "scissors"]
-    computers_answer = random.choice(choice)
-    if answer not in choice:
-        await ctx.reply("This is not a valid choice. Choose one of these: rock, paper, scissors.")
-    else:
-        if computers_answer == answer:
-            await ctx.reply("It's a tie :/.")
-        if computers_answer == "rock":
-            if answer == "paper":
-                await ctx.reply(f"You win! I chose {computers_answer} and you chose {answer}!")
-        if computers_answer == "rock":
-            if answer == "scissors":
-                await ctx.reply(f"You loose! I chose {computers_answer} and you chose {answer}!")
-        if computers_answer == "paper":
-            if answer == "rock":
-                await ctx.reply(f"You loose! I chose {computers_answer} and you chose {answer}!")
-        if computers_answer == "paper":
-            if answer == "scissors":
-                await ctx.reply(f"You win! I chose {computers_answer} and you chose {answer}!")
-        if computers_answer == "scissors":
-            if answer == "rock":
-                await ctx.reply(f"You win! I chose {computers_answer} and you chose {answer}!")
-        if computers_answer == "scissors":
-            if answer == "paper":
-                await ctx.reply(f"You loose! I chose {computers_answer} and you chose {answer}!")
+@bot.command()<br>
+async def hello(ctx):<br>
+    await ctx.reply('Hello!')<br>
 
-bot.run('OTMwMzU2NDk4NjAzODQ3NzMw.Yd0sAg.hD8J5UTjQ58XoPB36YW83Z-LnV8')\
-# RPS bot <br>
+
+@bot.command()<br>
+async def rps(ctx, message):<br>
+    answer = message.lower()<br>
+    choice = ["rock", "paper", "scissors"]<br>
+    computers_answer = random.choice(choice)<br>
+    if answer not in choice:<br>
+        await ctx.reply("This is not a valid choice. Choose one of these: rock, paper, scissors.")<br>
+    else:<br>
+        if computers_answer == answer:<br>
+            await ctx.reply("It's a tie :/.")<br>
+        if computers_answer == "rock":<br>
+            if answer == "paper":<br>
+                await ctx.reply(f"You win! I chose {computers_answer} and you chose {answer}!")<br>
+        if computers_answer == "rock":<br>
+            if answer == "scissors":<br>
+                await ctx.reply(f"You loose! I chose {computers_answer} and you chose {answer}!")<br>
+        if computers_answer == "paper":<br>
+            if answer == "rock":<br>
+                await ctx.reply(f"You loose! I chose {computers_answer} and you chose {answer}!")<br>
+        if computers_answer == "paper":<br>
+            if answer == "scissors":<br>
+                await ctx.reply(f"You win! I chose {computers_answer} and you chose {answer}!")<br>
+        if computers_answer == "scissors":<br>
+            if answer == "rock":<br>
+                await ctx.reply(f"You win! I chose {computers_answer} and you chose {answer}!")<br>
+        if computers_answer == "scissors":<br>
+            if answer == "paper":<br>
+                await ctx.reply(f"You loose! I chose {computers_answer} and you chose {answer}!")<br>
+
+bot.run('OTMwMzU2NDk4NjAzODQ3NzMw.Yd0sAg.hD8J5UTjQ58XoPB36YW83Z-LnV8')<br>
+## RPS bot <br>
 ![image](https://user-images.githubusercontent.com/96763019/188546779-66583fce-a325-4420-bd53-05c4c74c1ed8.png)
 <br>
 
